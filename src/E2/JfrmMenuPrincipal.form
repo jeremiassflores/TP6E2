@@ -26,6 +26,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="XNombre">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+A"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Consultas por Nombre"/>
               </Properties>
               <Events>
@@ -34,11 +37,17 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="XPrecio">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+B"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Consultas por Precio"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="XRubro">
               <Properties>
+                <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
+                  <KeyStroke key="Shift+Ctrl+C"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Consultas por Rubro"/>
               </Properties>
             </MenuItem>

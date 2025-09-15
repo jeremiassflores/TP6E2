@@ -62,6 +62,7 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
 
         Consultas.setText("Consultas");
 
+        XNombre.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
         XNombre.setText("Consultas por Nombre");
         XNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,9 +71,11 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
         });
         Consultas.add(XNombre);
 
+        XPrecio.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
         XPrecio.setText("Consultas por Precio");
         Consultas.add(XPrecio);
 
+        XRubro.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
         XRubro.setText("Consultas por Rubro");
         Consultas.add(XRubro);
 
