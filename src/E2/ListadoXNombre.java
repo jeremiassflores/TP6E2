@@ -33,6 +33,8 @@ public class ListadoXNombre extends javax.swing.JInternalFrame {
         TablaXNombre = new javax.swing.JTable();
         Icono = new javax.swing.JLabel();
 
+        setClosable(true);
+
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Listado por Nombre");

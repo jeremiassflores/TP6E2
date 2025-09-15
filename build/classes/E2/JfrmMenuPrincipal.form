@@ -42,6 +42,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Consultas por Precio"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XPrecioActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="XRubro">
               <Properties>
@@ -50,6 +53,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Consultas por Rubro"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="XRubroActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -79,17 +85,17 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jDesktopPane2" alignment="0" max="32767" attributes="0"/>
+          <Component id="Escritorio" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jDesktopPane2" alignment="0" max="32767" attributes="0"/>
+          <Component id="Escritorio" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JDesktopPane" name="jDesktopPane2">
+    <Container class="javax.swing.JDesktopPane" name="Escritorio">
 
       <Layout>
         <DimensionLayout dim="0">

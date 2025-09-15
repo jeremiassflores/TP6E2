@@ -26,7 +26,7 @@ public class JifrmGestionProductos extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane3 = new javax.swing.JDesktopPane();
+        escritorioGProductos = new javax.swing.JDesktopPane();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         ComboBuscarCategoria1 = new javax.swing.JComboBox<>();
@@ -49,6 +49,8 @@ public class JifrmGestionProductos extends javax.swing.JInternalFrame {
         IngresarCodigo1 = new javax.swing.JTextField();
         IngresarDescripcion1 = new javax.swing.JTextField();
         IngresarPrecio1 = new javax.swing.JTextField();
+
+        setClosable(true);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 0, 0));
@@ -104,6 +106,11 @@ public class JifrmGestionProductos extends javax.swing.JInternalFrame {
 
         BotonNuevo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8-caja-de-producto-de-pelo-corto-50.png"))); // NOI18N
         BotonNuevo1.setText("Nuevo");
+        BotonNuevo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotonNuevo1ActionPerformed(evt);
+            }
+        });
 
         BotonGuardar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/guardar.png"))); // NOI18N
         BotonGuardar1.setText("Guardar");
@@ -182,25 +189,25 @@ public class JifrmGestionProductos extends javax.swing.JInternalFrame {
                 .addGap(26, 26, 26))
         );
 
-        jDesktopPane3.setLayer(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane3.setLayer(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane3.setLayer(ComboBuscarCategoria1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane3.setLayer(jScrollPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane3.setLayer(BotonCerrar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane3.setLayer(BotonBuscar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane3.setLayer(BotonActualizar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane3.setLayer(BotonNuevo1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane3.setLayer(BotonGuardar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane3.setLayer(BotonEliminar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane3.setLayer(jPanel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorioGProductos.setLayer(jLabel9, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorioGProductos.setLayer(jLabel10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorioGProductos.setLayer(ComboBuscarCategoria1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorioGProductos.setLayer(jScrollPane2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorioGProductos.setLayer(BotonCerrar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorioGProductos.setLayer(BotonBuscar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorioGProductos.setLayer(BotonActualizar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorioGProductos.setLayer(BotonNuevo1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorioGProductos.setLayer(BotonGuardar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorioGProductos.setLayer(BotonEliminar1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        escritorioGProductos.setLayer(jPanel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        javax.swing.GroupLayout jDesktopPane3Layout = new javax.swing.GroupLayout(jDesktopPane3);
-        jDesktopPane3.setLayout(jDesktopPane3Layout);
-        jDesktopPane3Layout.setHorizontalGroup(
-            jDesktopPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane3Layout.createSequentialGroup()
-                .addGroup(jDesktopPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDesktopPane3Layout.createSequentialGroup()
+        javax.swing.GroupLayout escritorioGProductosLayout = new javax.swing.GroupLayout(escritorioGProductos);
+        escritorioGProductos.setLayout(escritorioGProductosLayout);
+        escritorioGProductosLayout.setHorizontalGroup(
+            escritorioGProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(escritorioGProductosLayout.createSequentialGroup()
+                .addGroup(escritorioGProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(escritorioGProductosLayout.createSequentialGroup()
                         .addGap(19, 19, 19)
                         .addComponent(BotonNuevo1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -209,48 +216,48 @@ public class JifrmGestionProductos extends javax.swing.JInternalFrame {
                         .addComponent(BotonActualizar1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(BotonEliminar1))
-                    .addGroup(jDesktopPane3Layout.createSequentialGroup()
+                    .addGroup(escritorioGProductosLayout.createSequentialGroup()
                         .addGap(29, 29, 29)
-                        .addGroup(jDesktopPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(escritorioGProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jDesktopPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(escritorioGProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(jLabel9)
-                                .addGroup(jDesktopPane3Layout.createSequentialGroup()
+                                .addGroup(escritorioGProductosLayout.createSequentialGroup()
                                     .addComponent(jLabel10)
                                     .addGap(42, 42, 42)
                                     .addComponent(ComboBuscarCategoria1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(jDesktopPane3Layout.createSequentialGroup()
+                            .addGroup(escritorioGProductosLayout.createSequentialGroup()
                                 .addGap(6, 6, 6)
                                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addGroup(jDesktopPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(escritorioGProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(BotonCerrar1)
                                     .addComponent(BotonBuscar1))))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jDesktopPane3Layout.setVerticalGroup(
-            jDesktopPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDesktopPane3Layout.createSequentialGroup()
+        escritorioGProductosLayout.setVerticalGroup(
+            escritorioGProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(escritorioGProductosLayout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jDesktopPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(escritorioGProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel10)
                     .addComponent(ComboBuscarCategoria1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jDesktopPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(jDesktopPane3Layout.createSequentialGroup()
+                .addGroup(escritorioGProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(escritorioGProductosLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18))
-                    .addGroup(jDesktopPane3Layout.createSequentialGroup()
+                    .addGroup(escritorioGProductosLayout.createSequentialGroup()
                         .addGap(37, 37, 37)
                         .addComponent(BotonBuscar1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(BotonCerrar1)
                         .addGap(105, 105, 105)))
-                .addGroup(jDesktopPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(escritorioGProductosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BotonActualizar1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BotonNuevo1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BotonEliminar1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -264,13 +271,13 @@ public class JifrmGestionProductos extends javax.swing.JInternalFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jDesktopPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(escritorioGProductos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jDesktopPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(escritorioGProductos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -293,6 +300,10 @@ public class JifrmGestionProductos extends javax.swing.JInternalFrame {
     this.dispose(); 
     }//GEN-LAST:event_BotonCerrar1ActionPerformed
 
+    private void BotonNuevo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonNuevo1ActionPerformed
+
+    }//GEN-LAST:event_BotonNuevo1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BotonActualizar1;
@@ -308,7 +319,7 @@ public class JifrmGestionProductos extends javax.swing.JInternalFrame {
     private javax.swing.JTextField IngresarPrecio1;
     private javax.swing.JSpinner SpinStock1;
     private javax.swing.JTable TablaProductos1;
-    private javax.swing.JDesktopPane jDesktopPane3;
+    private javax.swing.JDesktopPane escritorioGProductos;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;

@@ -35,6 +35,8 @@ public class ListadoXPrecio extends javax.swing.JInternalFrame {
         jLabel3 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
 
+        setClosable(true);
+
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Listado por Precio");

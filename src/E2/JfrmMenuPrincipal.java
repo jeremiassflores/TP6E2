@@ -26,7 +26,7 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDesktopPane2 = new javax.swing.JDesktopPane();
+        Escritorio = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         Administracion = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -37,14 +37,14 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        javax.swing.GroupLayout jDesktopPane2Layout = new javax.swing.GroupLayout(jDesktopPane2);
-        jDesktopPane2.setLayout(jDesktopPane2Layout);
-        jDesktopPane2Layout.setHorizontalGroup(
-            jDesktopPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout EscritorioLayout = new javax.swing.GroupLayout(Escritorio);
+        Escritorio.setLayout(EscritorioLayout);
+        EscritorioLayout.setHorizontalGroup(
+            EscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 578, Short.MAX_VALUE)
         );
-        jDesktopPane2Layout.setVerticalGroup(
-            jDesktopPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        EscritorioLayout.setVerticalGroup(
+            EscritorioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 559, Short.MAX_VALUE)
         );
 
@@ -73,10 +73,20 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
 
         XPrecio.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
         XPrecio.setText("Consultas por Precio");
+        XPrecio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                XPrecioActionPerformed(evt);
+            }
+        });
         Consultas.add(XPrecio);
 
         XRubro.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
         XRubro.setText("Consultas por Rubro");
+        XRubro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                XRubroActionPerformed(evt);
+            }
+        });
         Consultas.add(XRubro);
 
         jMenuBar1.add(Consultas);
@@ -87,23 +97,55 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane2)
+            .addComponent(Escritorio)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane2)
+            .addComponent(Escritorio)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
+        Escritorio.removeAll();
+        Escritorio.repaint();
+        JifrmGestionProductos aux = new JifrmGestionProductos();
+        aux.setVisible(true);
+        Escritorio.add(aux);
+        Escritorio.moveToFront(aux);
+        
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void XNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_XNombreActionPerformed
-        // TODO add your handling code here:
+        Escritorio.removeAll();
+        Escritorio.repaint();
+        ListadoXNombre aux = new ListadoXNombre();
+        aux.setVisible(true);
+        Escritorio.add(aux);
+        Escritorio.moveToFront(aux);
+        
     }//GEN-LAST:event_XNombreActionPerformed
+
+    private void XPrecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_XPrecioActionPerformed
+        Escritorio.removeAll();
+        Escritorio.repaint();
+        ListadoXPrecio aux = new ListadoXPrecio();
+        aux.setVisible(true);
+        Escritorio.add(aux);
+        Escritorio.moveToFront(aux);
+        
+    }//GEN-LAST:event_XPrecioActionPerformed
+
+    private void XRubroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_XRubroActionPerformed
+         Escritorio.removeAll();
+        Escritorio.repaint();
+        ListadoXRubro aux = new ListadoXRubro();
+        aux.setVisible(true);
+        Escritorio.add(aux);
+        Escritorio.moveToFront(aux);
+        
+    }//GEN-LAST:event_XRubroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -143,10 +185,10 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu Administracion;
     private javax.swing.JMenu Consultas;
+    private javax.swing.JDesktopPane Escritorio;
     private javax.swing.JMenuItem XNombre;
     private javax.swing.JMenuItem XPrecio;
     private javax.swing.JMenuItem XRubro;
-    private javax.swing.JDesktopPane jDesktopPane2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     // End of variables declaration//GEN-END:variables
