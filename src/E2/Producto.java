@@ -4,18 +4,18 @@ package E2;
 import java.util.Objects;
 
 
-public class Producto {
+public class Producto implements Comparable<Producto>{
     
-    private int codigo;
+    private Integer codigo;
     private String descripcion;
-    private double precio;
-    private int stock;
+    private Double precio;
+    private Integer stock;
     private String rubro;
 
     public Producto() {
     }
 
-    public Producto(int codigo, String descripcion, double precio, int stock, String rubro) {
+    public Producto(Integer codigo, String descripcion, Double precio, Integer stock, String rubro) {
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.precio = precio;
@@ -23,11 +23,11 @@ public class Producto {
         this.rubro = rubro;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 
@@ -39,19 +39,19 @@ public class Producto {
         this.descripcion = descripcion;
     }
 
-    public double getPrecio() {
+    public Double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(Double precio) {
         this.precio = precio;
     }
 
-    public int getStock() {
+    public Integer getStock() {
         return stock;
     }
 
-    public void setStock(int stock) {
+    public void setStock(Integer stock) {
         this.stock = stock;
     }
 
@@ -112,5 +112,8 @@ public class Producto {
     }
     
     
-    
+    @Override
+    public int compareTo(Producto otro){
+        return this.descripcion.compareTo(otro.getDescripcion());
+    }
 }
